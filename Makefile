@@ -18,8 +18,8 @@ node_modules: html_views/node_modules server/node_modules client/node_modules
 
 html_views/jquery:
 	mkdir -p html_views/jquery
-	wget https://code.jquery.com/jquery-2.2.4.min.js -O html_views/jquery/jquery-2.2.4.min.js
-	wget https://jqueryui.com/resources/download/jquery-ui-1.12.1.zip
+	wget --no-check-certificate https://code.jquery.com/jquery-2.2.4.min.js -O html_views/jquery/jquery-2.2.4.min.js
+	wget --no-check-certificate https://jqueryui.com/resources/download/jquery-ui-1.12.1.zip
 	unzip -p jquery-ui-1.12.1.zip jquery-ui-1.12.1/jquery-ui.min.js > html_views/jquery/jquery-ui.min.js
 	rm jquery-ui-1.12.1.zip
 
